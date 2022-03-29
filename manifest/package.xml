@@ -32,5 +32,15 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Product2.Proteins__c</members>
+        <members>Product2.Fats__c</members>
+        <members>Product2.Carbohydrates__c</members>
+        <name>CustomField</name>
+    </types>
     <version>54.0</version>
 </Package>
