@@ -1,4 +1,4 @@
-public with sharing class MainController {
+public with sharing class CalorizatorController {
 
     public static void calculateBZU(List<TestProduct> listPr){
         Decimal totalWeight = 0.0;
