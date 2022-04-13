@@ -15,6 +15,7 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Calorizator Admin Permission Set</label>
+    <license>Salesforce</license>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -24,4 +25,12 @@
         <object>Product2</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <tabSettings>
+        <tab>Calorizator</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>standard-Product2</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
