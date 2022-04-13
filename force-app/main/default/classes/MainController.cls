@@ -3,14 +3,11 @@ public with sharing class MainController {
     public static void calculateBZU(List<TestProduct> listPr){
         Decimal totalWeight = 0.0;
         for(TestProduct pr: listPr){
-            //System.debug(pr);
             totalWeight += pr.weight;
         }
-        //System.debug(totalWeight);
 
         for(TestProduct pr: listPr){
             pr.procent = pr.weight / totalWeight;
-            //System.debug(pr);
         }
 
         Decimal totalKkal = 0.0;
@@ -24,12 +21,8 @@ public with sharing class MainController {
             totalFats = totalFats + (pr.fats * pr.procent);
             totalCarboh = totalCarboh + (pr.carbohydrates * pr.procent);
         }
-        System.debug('---------------------');
-        System.debug('kkal - ' + totalKkal);
-        System.debug('belki - ' + totalProteins);
-        System.debug('fats - ' + totalFats);
-        System.debug('uglevodi - ' + totalCarboh);
     }
+    
     public class TestProduct {
         Decimal proteins;
         Decimal fats;
