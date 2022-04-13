@@ -3,11 +3,14 @@ public with sharing class MainController {
     public static void calculateBZU(List<TestProduct> listPr){
         Decimal totalWeight = 0.0;
         for(TestProduct pr: listPr){
+            //System.debug(pr);
             totalWeight += pr.weight;
         }
+        //System.debug(totalWeight);
 
         for(TestProduct pr: listPr){
             pr.procent = pr.weight / totalWeight;
+            //System.debug(pr);
         }
 
         Decimal totalKkal = 0.0;
@@ -21,6 +24,11 @@ public with sharing class MainController {
             totalFats = totalFats + (pr.fats * pr.procent);
             totalCarboh = totalCarboh + (pr.carbohydrates * pr.procent);
         }
+        System.debug('---------------------');
+        System.debug('kkal - ' + totalKkal);
+        System.debug('belki - ' + totalProteins);
+        System.debug('fats - ' + totalFats);
+        System.debug('uglevodi - ' + totalCarboh);
     }
     public class TestProduct {
         Decimal proteins;
@@ -40,22 +48,16 @@ public with sharing class MainController {
     }
 
     /*
-    MainController.TestProduct prod1 = new MainController.TestProduct(6.1, 0.0, 14.9, 84.0, 410.0);
-    MainController.TestProduct prod2 = new MainController.TestProduct(3.7, 1.7, 1.1, 34.0, 294.0);
-    MainController.TestProduct prod3 = new MainController.TestProduct(1.4, 0.0, 10.4, 47.0, 94.0);
-    MainController.TestProduct prod4 = new MainController.TestProduct(11.0, 0.5, 75.0, 350.0, 100.0);
-    MainController.TestProduct prod5 = new MainController.TestProduct(0.7, 0.8, 23.0, 102.0, 5.0);
-    MainController.TestProduct prod6 = new MainController.TestProduct(3.5, 0.0, 10.0, 55.0, 17.0);
-    MainController.TestProduct prod7 = new MainController.TestProduct(0.0, 99.9, 0.0, 899.0, 51.0);
+    MainController.TestProduct prod1 = new MainController.TestProduct(18.0, 12.0, 0.0, 180.0, 184.0);
+    MainController.TestProduct prod2 = new MainController.TestProduct(7.3, 3.0, 50.0, 260.0, 139.0);
+    MainController.TestProduct prod3 = new MainController.TestProduct(0.8, 72.5, 1.3, 660.0, 53.0);
+    MainController.TestProduct prod4 = new MainController.TestProduct(0.9, 0.1, 3.0, 16.0, 22.0);
 
     List<MainController.TestProduct> listPr = new List<MainController.TestProduct>();
     listPr.add(prod1);
     listPr.add(prod2);
     listPr.add(prod3);
     listPr.add(prod4);
-    listPr.add(prod5);
-    listPr.add(prod6);
-    listPr.add(prod7);
     MainController.calculateBZU(listPr);
     */
 }

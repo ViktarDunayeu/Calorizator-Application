@@ -33,14 +33,19 @@
         <name>StaticResource</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Product2</members>
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Product2.Kilocalories__c</members>
         <members>Product2.Proteins__c</members>
         <members>Product2.Fats__c</members>
         <members>Product2.Carbohydrates__c</members>
         <name>CustomField</name>
+    </types>
+    <types>
+        <members>Product2-Product Layout</members>
+        <name>Layout</name>
     </types>
     <version>54.0</version>
 </Package>
