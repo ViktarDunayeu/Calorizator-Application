@@ -33,10 +33,6 @@
         <name>StaticResource</name>
     </types>
     <types>
-        <members>Product2</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
         <members>Product2.Kilocalories__c</members>
         <members>Product2.Proteins__c</members>
         <members>Product2.Fats__c</members>
@@ -44,8 +40,29 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>Product2</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
         <members>Product2-Product Layout</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>Calorizator</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Calorizator</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Calorizator_UtilityBar</members>
+        <members>Calorizator</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Calorizator_Admin_Permission_Set</members>
+        <name>PermissionSet</name>
     </types>
     <version>54.0</version>
 </Package>
