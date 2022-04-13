@@ -52,6 +52,10 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Calorizator</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
         <members>Calorizator_UtilityBar</members>
         <members>Calorizator</members>
         <name>FlexiPage</name>
