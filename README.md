@@ -1,2 +1,1 @@
 # Calorizator Application
-
